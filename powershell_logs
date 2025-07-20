@@ -1,0 +1,142 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): y
+PS C:\Windows\system32> firebase login
+i  The Firebase CLI’s MCP server feature can optionally make use of Gemini in Firebase. Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data√ Enable Gemini in Firebase features? Yes
+
+i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+√ Allow Firebase to collect CLI and Emulator Suite usage and error reporting information? Yes
+
+i  To change your the preference at any time, run `firebase logout` and `firebase login` again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=879691038&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
++  Success! Logged in as tharinduchanaka6@gmail.com
+PS C:\Windows\system32> cd H:\ghost-bot
+PS H:\ghost-bot> firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  H:\ghost-bot
+
+√ Are you ready to proceed? Yes
+√ Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to
+confirm your choices. Functions: Configure a Cloud Functions directory and its files, Hosting: Configure files for
+Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+√ Please select an option: Use an existing project
+√ Select a default Firebase project for this directory: ghost-incidents-bot (ghost-incidents-bot)
+i  Using project ghost-incidents-bot (ghost-incidents-bot)
+√ What language would you like to use to write Cloud Functions? TypeScript
+√ Do you want to use ESLint to catch probable bugs and enforce style? Yes
++  Wrote functions/package.json
++  Wrote functions/.eslintrc.js
++  Wrote functions/tsconfig.dev.json
++  Wrote functions/tsconfig.json
++  Wrote functions/src/index.ts/docs/functions/organize-functions for
++  Wrote functions/.gitignoreg your functions using codebases.
+√ Do you want to install dependencies with npm now? Yes
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: undefined,
+npm warn EBADENGINE   required: { node: '22' },Cloud Functions? (Use arrow keys)
+npm warn EBADENGINE   current: { node: 'v20.17.0', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 692 packages, and audited 693 packages in 3m
+
+162 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+√ What do you want to use as your public directory? public
+√ Configure as a single-page app (rewrite all urls to /index.html)? Yes
+√ Set up automatic builds and deploys with GitHub? Yes
++  Wrote public/index.html
+
+i  Didn't detect a .git folder. Assuming H:\ghost-bot is the project root.
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=877021508&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
++  Success! Logged into GitHub as Tharindu714
+
+⠹ For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) AskGhost.com
+
+!  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access?
+
+i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+
+⠹ For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) AskGhost
+
+!  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access?
+
+i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+
+√ For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) Tharindu714/AskGhost.com
+
++  Created service account github-action-1022966543 with Firebase Hosting admin permissions.
++  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_GHOST_INCIDENTS_BOT.
+i  You can manage your secrets at https://github.com/Tharindu714/AskGhost.com/settings/secrets.
+
+√ Set up the workflow to run a build script before every deploy? Yes
+√ What script should be run before every deploy? npm install && npm run build
+
++  Created workflow file H:\ghost-bot\.github/workflows/firebase-hosting-pull-request.yml
+√ Set up automatic deployment to your site's live channel when a PR is merged? Yes
+√ What is the name of the GitHub branch associated with your site's live channel? main
+
++  Created workflow file H:\ghost-bot\.github/workflows/firebase-hosting-merge.yml
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
++  Wrote configuration info to firebase.json
++  Wrote project information to .firebaserc
++  Wrote .gitignore
+
++  Firebase initialization complete!
+PS H:\ghost-bot>
